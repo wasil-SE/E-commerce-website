@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Meridian — curated essentials for modern living. Shop premium fashion, home, and lifestyle products.">
+  <title>Meridain — Curated Essentials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" id="logo">Meridain</a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#shop" class="nav__link">Shop</a>
+        <a href="#categories" class="nav__link">Categories</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#newsletter" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search" aria-expanded="false" aria-controls="searchOverlay">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3-3" />
+          </svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart, 0 items" aria-expanded="false"
+          aria-controls="cartOverlay">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 6h15l-1.5 9H7.5L6 6z" />
+            <circle cx="9" cy="20" r="1" />
+            <circle cx="18" cy="20" r="1" />
+            <path d="M6 6L5 3H2" />
+          </svg>
+          <span class="cart-btn__count">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="main.avif" alt="" aria-hidden="true">
+      </div>
+      
+      <div class="container hero__content">
+        <p class="hero__eyebrow">New Collection — Summer 2026</p>
+        <h1 class="hero__title">Essentials crafted for<br><em>everyday elegance</em></h1>
+        <p class="hero__desc">Discover thoughtfully designed pieces that blend timeless style with modern comfort.</p>
+        <div class="hero__actions">
+          <a href="#shop" class="btn btn--primary">Shop Collection</a>
+          <a href="#about" class="btn btn--ghost">Our Story</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container trust-bar__grid">
+        <div class="trust-bar__item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <span>Secure Checkout</span>
+        </div>
+        <div class="trust-bar__item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="15" height="13" rx="2" />
+            <path d="M16 8h4l3 5v3h-7V8z" />
+            <circle cx="5.5" cy="18.5" r="2.5" />
+            <circle cx="18.5" cy="18.5" r="2.5" />
+          </svg>
+          <span>Free Shipping $75+</span>
+        </div>
+        <div class="trust-bar__item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <span>30-Day Returns</span>
+        </div>
+        <div class="trust-bar__item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+          </svg>
+          <span>24/7 Support</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <p class="section__eyebrow">Featured</p>
+            <h2 class="section__title">Best Sellers</h2>
+          </div>
+          <a href="#shop" class="link-arrow">View all products</a>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-name="Minimal Watch" data-category="Accessories" data-price="189">
+            <div class="product-card__image">
+              <img src="Watch.jfif"
+                alt="Minimalist watch with leather strap">
+              <span class="product-card__badge">New</span>
+              <button class="product-card__quick-add" aria-label="Add Minimal Watch to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Minimal Watch</h3>
+              <p class="product-card__category">Accessories</p>
+              <p class="product-card__price">$189</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Linen Sofa" data-category="Home" data-price="1249">
+            <div class="product-card__image">
+              <img src="sofa.jfif"
+                alt="Green velvet sofa in modern living room">
+              <button class="product-card__quick-add" aria-label="Add Linen Sofa to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Linen Sofa</h3>
+              <p class="product-card__category">Home</p>
+              <p class="product-card__price">$1,249</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Wide Trousers" data-category="Fashion" data-price="78">
+            <div class="product-card__image">
+              <img src="wide trouser.jpg"
+                alt="Wide-leg trousers in neutral tone">
+              <span class="product-card__badge product-card__badge--sale">-20%</span>
+              <button class="product-card__quick-add" aria-label="Add Wide Trousers to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Wide Trousers</h3>
+              <p class="product-card__category">Fashion</p>
+              <p class="product-card__price"><s>$98</s> $78</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Ceramic Vase" data-category="Home" data-price="64">
+            <div class="product-card__image">
+              <img src="Vase.avif"
+                alt="Ceramic vase with dried flowers">
+              <button class="product-card__quick-add" aria-label="Add Ceramic Vase to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Ceramic Vase</h3>
+              <p class="product-card__category">Home</p>
+              <p class="product-card__price">$64</p>
+            </div>
+          </article>
+        </div>
+        <p class="product-grid__empty" id="productGridEmpty" hidden>No products match this category.</p>
+      </div>
+    </section>
+
+    <section class="section section--categories" id="categories">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <p class="section__eyebrow">Browse</p>
+          <h2 class="section__title">Shop by Category</h2>
+        </div>
+
+        <div class="category-grid">
+          <a href="#shop" class="category-card category-card--large" data-category="Fashion">
+            <img src="clothing.jpg" alt="">
+            <div class="category-card__overlay">
+              <h3>Fashion</h3>
+              <span>124 items</span>
+            </div>
+          </a>
+          <a href="#shop" class="category-card" data-category="Home">
+ <img src="room.avif" alt="">
+            <div class="category-card__overlay">
+              <h3>Home</h3>
+              <span>86 items</span>
+            </div>
+          </a>
+          <a href="#shop" class="category-card" data-category="Accessories">
+            <img src="beauty accessories.jpg" alt="">
+            <div class="category-card__overlay">
+              <h3>Accessories</h3>
+              <span>52 items</span>
+            </div>
+          </a>
+          <a href="#shop" class="category-card" data-category="Beauty">
+            <img src="beauty.jpg" alt="">
+            <div class="category-card__overlay">
+              <h3>Beauty</h3>
+              <span>38 items</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-banner">
+      <div class="container promo-banner__inner">
+        <div class="promo-banner__content">
+          <p class="section__eyebrow">Limited Offer</p>
+          <h2 class="promo-banner__title">Summer Sale — Up to 40% Off</h2>
+          <p class="promo-banner__desc">Refresh your wardrobe and home with our seasonal favorites. Ends July 31.</p>
+          <a href="#shop" class="btn btn--primary btn--light">Shop the Sale</a>
+        </div>
+        <div class="promo-banner__image">
+          <img src="summer sale.jpg"
+            alt="Woman browsing clothing rack">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-grid__image">
+          <img src="worker.jfif"
+            alt="Artisan crafting leather goods">
+        </div>
+        <div class="about-grid__content">
+          <p class="section__eyebrow">Our Story</p>
+          <h2 class="section__title">Quality you can feel,<br>values you can trust</h2>
+          <p class="about-grid__text">Meridain was founded on a simple belief: everyday objects should be beautiful,
+            durable, and responsibly made. We partner with artisans and ethical manufacturers to bring you pieces that
+            last.</p>
+          <ul class="about-grid__stats">
+            <li>
+              <strong>000+</strong>
+              <span>Curated Products</span>
+            </li>
+            <li>
+              <strong>0+</strong>
+              <span>Happy Customers</span>
+            </li>
+            <li>
+              <strong>5.0</strong>
+              <span>Average Rating</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <p class="section__eyebrow">Reviews</p>
+          <h2 class="section__title">What Our Customers Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum pariatur quo praesentium provident eos beatae deserunt iusto corporis temporibus.</p>
+            <footer>
+              <strong>Wasil Javed</strong>
+              <span>Verified Buyer</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum pariatur quo praesentium provident eos beatae deserunt iusto corporis temporibus."</p>
+            <footer>
+              <strong>Wasil J.</strong>
+              <span>Verified Buyer</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            </p>
+            <footer>
+              <strong>Wasil Javed</strong>
+              <span>Verified Buyer</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter__inner">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title">Join the Meridain List</h2>
+          <p>Get early access to new drops, exclusive offers, and style inspiration — straight to your inbox.</p>
+        </div>
+        <form class="newsletter__form" id="newsletterForm">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+        <p class="newsletter__note" id="newsletterNote" hidden>Thanks for subscribing! Check your inbox to confirm.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo" id="footerLogo">Meridain</a>
+        <p>Curated essentials for modern living.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <a href="#shop" data-toast="Showing new arrivals">New Arrivals</a>
+        <a href="#shop">Best Sellers</a>
+        <a href="#shop" data-toast="Summer sale items">Sale</a>
+        <a href="#shop" data-toast="Gift cards coming soon">Gift Cards</a>
+      </div>
+      <div class="footer__col">
+        <h4>Help</h4>
+        <a href="#about" data-toast="Free shipping on orders over $75">Shipping</a>
+        <a href="#about" data-toast="30-day hassle-free returns">Returns</a>
+        <a href="#about" data-toast="Visit our FAQ page soon">FAQ</a>
+        <a href="#newsletter">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="https://www.instagram.com/codewithwasil/" target="_blank" data-toast="Follow us @CodeWithWasil">Instagram</a>
+        <a href="#newsletter" data-toast="Follow us @CodeWithWasil">Pinterest</a>
+        <a href="#newsletter" data-toast="Follow us @CodeWithWasil">Twitter</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Made in Pakistan by Wasil with &hearts; &hearts; &hearts; </p>
+      <div class="footer__legal">
+        <a href="#about" data-toast="Privacy policy coming soon">Privacy</a>
+        <a href="#about" data-toast="Terms of service coming soon">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="searchOverlay" hidden aria-hidden="true">
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+      <div class="search-modal__header">
+        <h2 id="searchTitle">Search Products</h2>
+        <button class="modal-close" id="searchClose" aria-label="Close search">&times;</button>
+      </div>
+      <input type="search" class="search-modal__input" id="searchInput" placeholder="Search by name or category..."
+        autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="overlay overlay--drawer" id="cartOverlay" hidden aria-hidden="true">
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-drawer__header">
+        <h2 id="cartTitle">Your Cart</h2>
+        <button class="modal-close" id="cartClose" aria-label="Close cart">&times;</button>
+      </div>
+      <div class="cart-drawer__items" id="cartItemsList">
+        <p class="cart-drawer__empty" id="cartEmpty">Your cart is empty.</p>
+      </div>
+      <div class="cart-drawer__footer" id="cartFooter" hidden>
+        <div class="cart-drawer__total">
+          <span>Subtotal</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <button class="btn btn--primary cart-drawer__checkout" id="checkoutBtn">Checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
